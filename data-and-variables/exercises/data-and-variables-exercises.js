@@ -25,3 +25,6 @@ let hoursToMoon = (milesToMoon/shuttleSpeedMph)
 let daysToMoon = (milesToMoon/24)
 // Print the results of the trip to the moon below
 console.log (shuttleName, "will take", daysToMoon, "days to reach moon.");
+let num = 7;
+
+  dsa
