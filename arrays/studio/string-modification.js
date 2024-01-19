@@ -8,7 +8,7 @@ string= str.slice(0,3)
 str = str.slice(3,10) + string
 console.log(str.slice(3,10)+string)
 //Use a template literal to print the original and modified string in a descriptive phrase.
-console.log(`This ${str} is good and i know how to slice to create words like this ${str.slice(3,10)+strimg}`);
+console.log(`This ${str} is good and i know how to slice to create words like this ${str.slice(3,10)+string}`);
 //2) Modify your code to accept user input. Query the user to enter the number of letters that will be relocated.
 let userInput='';
 userInput=input.question("Enter numbers of letters:");
