@@ -8,8 +8,13 @@ string= str.slice(0,3)
 str = str.slice(3,10) + string
 console.log(str.slice(3,10)+string)
 //Use a template literal to print the original and modified string in a descriptive phrase.
-console.log(`This ${str} is good`)
+console.log(`This ${str} is good and i know how to slice to create words like this ${str.slice(3,10)+strimg}`);
 //2) Modify your code to accept user input. Query the user to enter the number of letters that will be relocated.
-
+let userInput='';
+userInput=input.question("Enter numbers of letters:");
 //3) Add validation to your code to deal with user inputs that are longer than the word. In such cases, default to moving 3 characters. 
 // Also, the template literal should note the error.
+if (userInput<10){
+    console.log("Too many letters");
+    userInput=3
+}
