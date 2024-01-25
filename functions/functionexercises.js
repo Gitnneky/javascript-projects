@@ -59,17 +59,13 @@ console.log(makeIsoscelesTriangle(5));
 
 // Diamonds
 function makeDiamond(height) {
-  let diamond = " ";
+  let diamond = "";
   for (let i =1; i <= height; i += 2){
     let spaces = (height - i) / 2;
     let hashes = i;
-    diamond += " ".repeat(spaces) + "*".repeat(hashes) + "\n";
+    diamond += "".repeat(spaces) + "#".repeat(hashes) + "\n";
   }
-  for (let i = height - 2; i >= 1; i -= 2){
-    let spaces = (height-i) / 2;
-    let hashes = i;
-    diamond += " ".repeat(spaces) + "*".repeat(hashes) + "\n"
-  }  
+      diamond += diamond.split("\n").reverse().slice(1).join("\n"); 
   return diamond;
 }
 console.log(makeDiamond(5));
