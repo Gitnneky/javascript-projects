@@ -13,3 +13,10 @@ c) Print the new array to confirm your work.
 */
 
 let arr = ['Elocution', 21, 'Clean teeth', 100];
+let f1 = function(str) {
+    return str + str;
+ };
+ 
+ let f2 = f1;
+
+ 
