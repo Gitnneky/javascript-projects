@@ -1,6 +1,21 @@
 // Code your orbitCircumference function here:
+let radius = 2000;
+let speed = 28000;
+function orbitCircumference(radius){
+  let circumference = Math.celi((2 * Math.Pi * radius));
+  return circumference;
+}
+console.log(orbitCircumference(radius));
 
-
+function missionDuration(numOrbits, radius, speed){
+  let oneOrbit = orbitCircumference(radius);
+  let time = 0
+  for (let i = 0; i < numOrbits; i++){
+    time+= oneOrbit / speed;
+  }
+  return Math.round(time*100)/100
+}
+console.log(missionDuration(5,radius,orbitalspeed));
 // Code your missionDuration function here:
 
 

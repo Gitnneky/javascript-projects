@@ -5,7 +5,30 @@
 
 
 let idNumbers = [291, 414, 503, 599, 796, 890];
+function selectRandomEntry(arr){
+  let index = Math.floor(Math.random()*arr.length)
+  return arr[index];
+}
+console.log(selectRandomEntry(idNumbers));
 
+newCrew = [];
+while (newCrew.length <=2){
+  let crewMember = selectRandomEntry(idNumbers);
+  if (!newCrew.includes(crewMember)){
+    newCrew.push(crewMember);
+  }
+  console.log(newCrew)
+}
+
+function animalsFlying(arr1, arr2){
+  let luckyDuck = [];
+  for(let i = 0; i < arr2.length; i++){
+    if (arr1.includes(arr2[i].astronautID)){
+    luckyDuck.push(arr2[i]);
+  }
+}
+return luckyDuck;
+}
 // Here are the candidates and the 'animals' array:
 let candidateA = {
   'name':'Gordon Shumway',
