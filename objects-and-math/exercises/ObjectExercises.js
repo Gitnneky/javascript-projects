@@ -5,7 +5,7 @@ let superChimpOne = {
    age: 6
 };
 superChimpOne.astronautId = 10;
-superChimpOne.move = function () {
+superChimpOne.move = function() {
     return Math.ceil(Math.random()*10);
       
 }
